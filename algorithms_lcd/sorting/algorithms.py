@@ -1,23 +1,22 @@
 import copy
-from algorithms_lcd.sorting.sorted_data import SortedData
+from algorithms_lcd.sorting.sorted_list import SortedList
 from algorithms_lcd.sorting import bubble_sort
-
 """
     ## Sort
         Class bundles sorting-related logic and tracks changes to the data during the execution of the algorithm. 
     ### Parameters:
     - `algorithm`:
-        Function for sorting data, which takes 'self.sorted_data' reference as an argument.
-        It should update sorted_data which each successful swap to get the right number and values of steps
-        using such functions as push, pull, swap_index and swap_item.
-        It should also make a shallow object of the input list if there could be unnecessary updates on sorted_data.
+        Function for sorting data, which takes SortedList reference as an argument.
+        It should update SortedList which each successful swap to get the right number and values of steps
+        using such functions as push, pull, swap_index and swap_item on the SortedList instance.
+        It should also make a shallow object of the input list if there could be unnecessary updates on sorted_list.
         Static methods available on the Sort prototype as an argument for algorithm are:
             - `bubble_sort_algorithm(data)`
     ### Available methods:
-    - `sort`:
-        Calls the sorting algorithm and using SortedData puts all the intermediate values inside the `self.steps`.
+    - `sort(data)`:
+        Calls the sorting algorithm and using SortedList stores all the intermediate values inside the `self.steps`.
     ### Notes:
-    - using `print` function on the Sort instance outputs it's algorithm name and all the steps from the last sorting
+    - Using `print` function on the Sort instance outputs it's algorithm name and all the steps from the last sorting.
 """
 
 
@@ -26,9 +25,9 @@ class Sort:
         # shallow copy of the input data provided for sorting
         self.data = []
         self.algorithm = algorithm
-        # instantiated as SortedData object during sort function execution
-        self.sorted_data = []
-        # takes value of sorted_data.steps
+        # instantiated as SortedList object during sort function execution
+        self.sorted_list = []
+        # takes value of sorted_list.steps
         self.steps = []
 
     def __str__(self):
@@ -47,44 +46,24 @@ class Sort:
     def sort(self, data):
         """
         >>> bubble_sort.sort(data)
-        >>> bubble_sort.sorted_data
+        >>> bubble_sort.sorted_list
         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         >>> len(bubble_sort.steps) > 0
         True
         """
         self.data = data
-        sorted_data = SortedData(data)
-        self.algorithm(sorted_data)
-        self.steps = sorted_data.steps
-        self.sorted_data = copy.copy(sorted_data)
+        sorted_list = SortedList(data)
+        self.algorithm(sorted_list)
+        self.steps = sorted_list.steps
+        self.sorted_list = copy.copy(sorted_list)
 
     @staticmethod
-    def bubble_sort_algorithm(sorted_data):
+    def bubble_sort_algorithm(sorted_list):
         """
-        >>> Sort.bubble_sort_algorithm(SortedData(data))
+        >>> Sort.bubble_sort_algorithm(SortedList(data))
         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         """
-        return bubble_sort.algorithm(sorted_data)
-
-
-"""
-    ## SortedData
-        Class extending list to track all the changes of its content inside the `self.steps` variable.
-    ### Parameters:
-    - `list`:
-        Input list based on which SortedData is initialized.
-    ### Available methods:
-    - `add_step(list)`
-        Appends whole step to the `self.steps`
-    - `swap_index(number, number)`
-        Swaps two items in the list based on their indexes and updates `self.steps`
-    - `swap_item(item, item)`:
-        Swaps two items in the list and updates `self.steps`
-    - `push(item)`:
-        Adds item to the list and updates `self.steps`
-    - `pull(item)`:
-        Removes item from the list and updates `self.steps`
-"""
+        return bubble_sort.algorithm(sorted_list)
 
 
 if __name__ == '__main__':

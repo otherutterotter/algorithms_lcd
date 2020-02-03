@@ -1,19 +1,18 @@
-from algorithms_lcd.sorting.sorted_data import SortedData
+from algorithms_lcd.sorting.sorted_list import SortedList
 
 
-def algorithm(sorted_data):
+def algorithm(sorted_list):
     """
-    >>> algorithm(data)
+    >>> sorted_list = SortedList([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+    >>> algorithm(sorted_list)
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     """
-    sorted_data.swap_index(0, 1)
-    sorted_data.sort()
+    sorted_list.swap_index(0, 1)
+    sorted_list.sort()
 
-    return sorted_data
+    return sorted_list
 
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod(extraglobs={
-        'data': SortedData([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
-    })
+    doctest.testmod()
