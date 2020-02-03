@@ -23,8 +23,12 @@ class SortedList(list):
         list.__init__(self, l)
         self.steps = [copy.copy(self)]
 
-    def add_step(self, step):
+    def add_step(self, step, merge=False):
         self.steps.append(step)
+        if merge:
+            self.clear()
+            for value in step:
+                self.append(value)
 
     def swap_index(self, i1, i2):
         """

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1ea7c7e-9d24-49fc-a9b5-422e854522f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms_lcd/arduino.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/arduino.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms_lcd/sorting/algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/algorithms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms_lcd/sorting/bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/bubble_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms_lcd/sorting/sorted_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/sorted_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms_lcd/sorting/sorted_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/sorted_list.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Doctests in bubble_sort">
+  <component name="RunManager" selected="Python.arduino">
     <configuration name="algorithms" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms_lcd" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,9 +131,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.arduino" />
         <item itemvalue="Python tests.Doctests in bubble_sort" />
         <item itemvalue="Python.algorithms" />
-        <item itemvalue="Python.arduino" />
         <item itemvalue="Python tests.Doctests in sorted_list" />
       </list>
     </recent_temporary>

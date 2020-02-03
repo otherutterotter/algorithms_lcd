@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # from pyfirmata import Arduino, util, STRING_DATA
-# board = Arduino(sys.argv[1]) # PORT, e.g. "COM3"
+# board = Arduino(sys.argv[ 1]) # PORT, e.g. "COM3"
 # board.send_sysex(STRING_DATA, util.str_to_two_byte_iter('Hello!'))
 #
 #
