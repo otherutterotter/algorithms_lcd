@@ -3,26 +3,35 @@ from algorithms_lcd.sorting.list import SortedList
 from algorithms_lcd.sorting.functions import bubble_sort, insertion_sort, merge_sort, quick_sort
 
 """
-    ## Sort
-        Class bundles sorting-related logic and tracks changes to the data during the execution of the algorithm. 
-        
-    ### Parameters:
+    ### Sort
+    > algorithms_lcd.sorting.Sort
+
+    Class bundles sorting-related logic and tracks changes to the data during the execution of the algorithm. 
+    
+    ```python
+    bubble_sort = Sort(Sort.bubble_sort_algorithm)
+    bubble_sort.sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+    bubble_sort.sorted_list
+    # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    ```
+    
+    #### Parameters:
     - `algorithm`:
-        Function for sorting data, which takes SortedList reference as an argument.
-        It should update SortedList which each successful swap to get the right number and values of steps
-        using such functions as push, pull, swap_index and swap_item on the SortedList instance.
-        It should also make a shallow object of the input list if there could be unnecessary updates on sorted_list.
-        Static methods available on the Sort prototype as an argument for algorithm are:
-            - `bubble_sort_algorithm(data)`
-            - `insertion_sort_algorithm(data)`
-            - `merge_sort_algorithm(data)`
-            - `quick_sort_algorithm(data)`
-            
-    ### Available methods:
+        > Function for sorting data, which takes SortedList reference as an argument.
+        > It should update SortedList which each successful swap to get the right number and values of steps
+        > using such functions as push, pull, swap_index and swap_item on the SortedList instance.
+        > It should also make a shallow object of the input list if there could be unnecessary updates on sorted_list.
+        > Static methods available on the Sort prototype as an argument for algorithm are:
+        - `bubble_sort_algorithm(sorted_list)`
+        - `insertion_sort_algorithm(sorted_list)`
+        - `merge_sort_algorithm(sorted_list)`
+        - `quick_sort_algorithm(sorted_list)`
+    
+    #### Available methods:
     - `sort(data)`:
-        Calls the sorting algorithm and using SortedList stores all the intermediate values inside the `self.steps`.
-        
-    ### Notes:
+      Calls the sorting algorithm and using SortedList stores all the intermediate values inside the `self.steps`.
+    
+    #### Notes:
     - Using `print` function on the Sort instance outputs it's algorithm name and all the steps from the last sorting.
 """
 

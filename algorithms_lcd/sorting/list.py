@@ -1,13 +1,25 @@
 import copy
 """
-    ## SortedList
-        Type extended from the List to record swaps needed to sort the list.
-        
-    ### Parameters:
+    ### SortedList
+    > algorithms_lcd.sorting.list.SortedList
+    
+    Type extended from the List to record swaps needed to sort the list.
+    
+    ```python
+    sorted_list = SortedList([])
+    sorted_list.push(1)
+    sorted_list.replace(1,2)
+    sorted_list.push(3)
+    sorted_list.swap_item(3,2)
+    sorted_list.steps
+    # [[], [1], [2], [2, 3], [3, 2]]
+    ```
+    
+    #### Parameters:
     - `list`:
-        Initial data of the algorithm, which is also pushed to `self.steps` as a first member.
-        
-    ### Available methods:
+      Initial data of the algorithm, which is also pushed to `self.steps` as a first member.
+    
+    #### Available methods:
     - `get_steps_len()`:
         Retrieves the length of the steps (with the initial step subtracted).
     - `swapIndex(i1, i2)`:
@@ -18,8 +30,8 @@ import copy
         Adds value to the list and pushes its current state to the `self.steps`.
     - `pull(item)`: 
         Same as above, only item is removed instead.
-        
-    ### Notes:
+    
+    #### Notes:
     - Except for the methods above SortedList behaves like an ordinary list.
 """
 
