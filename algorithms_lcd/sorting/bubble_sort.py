@@ -7,12 +7,18 @@ def algorithm(sorted_list):
     >>> algorithm(sorted_list)
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     """
-    # sorted_list.add_step([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
-    sorted_list.swap_index(0, 1)
-    sorted_list.add_step([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], True)
-    sorted_list.swap_index(0, 1)
-    # sorted_list.sort()
 
+    length = len(sorted_list)
+    n_of_swaps = length
+    while n_of_swaps > 0:
+        n_of_swaps = 0
+        for i in range(length):
+            if i < length - 1:
+                first_item = sorted_list[i]
+                second_item = sorted_list[i + 1]
+                if first_item > second_item:
+                    sorted_list.swap_item(first_item, second_item)
+                    n_of_swaps += 1
     return sorted_list
 
 

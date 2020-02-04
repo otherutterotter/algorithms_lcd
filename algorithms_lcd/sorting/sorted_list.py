@@ -6,6 +6,8 @@ import copy
     - `list`:
         Initial data of the algorithm, which is also pushed to `self.steps` as a first member.
     ### Available methods:
+    - `get_steps_len()`:
+        Retrieves the length of the steps (with the initial step subtracted).
     - `swapIndex(i1, i2)`:
         Swaps indexed items in the list and pushes its current state to the `self.steps`.
     - `swapItem(item1, item2)`:
@@ -76,6 +78,9 @@ class SortedList(list):
         """
         self.remove(item)
         self.steps.append(copy.copy(self))
+
+    def get_steps_len(self):
+        return len(self.steps) - 1
 
 
 if __name__ == '__main__':
