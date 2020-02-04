@@ -4,7 +4,7 @@ from algorithms_lcd.sorting.functions import bubble_sort, insertion_sort, merge_
 
 """
     ### Sort
-    > algorithms_lcd.sorting.Sort
+    > algorithms_lcd.sorting.algorithms.Sort
 
     Class bundles sorting-related logic and tracks changes to the data during the execution of the algorithm. 
     
