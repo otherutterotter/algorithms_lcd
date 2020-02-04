@@ -7,7 +7,7 @@ Arduino based interface for displaying step-by-step execution of specified sorti
 
 ## Documentation
 ### Sort
-> algorithms_lcd.sorting.Sort
+> algorithms_lcd.sorting.algorithms.Sort
 
 Class bundles sorting-related logic and tracks changes to the data during the execution of the algorithm. 
 
