@@ -82,9 +82,9 @@ sorted_list.steps
 ### GUI
 > algorithms_lcd.arduino.gui.GUI
 
-Tkinter GUI taking algorithms dictionary, number of items and list of type SortedList as arguments. 
-Algorithms dictionary keys will be visible as options and choosing them will trigger according function
-Static method `run(algorithms, number_of_items, sorted_list)` creates and open GUI in selected setting.
+Tkinter GUI taking Board reference algorithms dictionary, number of items and list of type SortedList as arguments. 
+Algorithms dictionary keys will be visible as options and choosing them will trigger according function.
+Static method `run(board, algorithms, number_of_items, sorted_list)` creates and open GUI in selected setting.
 
 ```python
 gui = GUI(
@@ -101,7 +101,8 @@ gui = GUI(
 > algorithms_lcd.arduino.protocol.Board
 
 Class for accessing Arduino/lcd related methods. Contains only two functions: `print(string)` and 
-`print_2d_data(string)`, which render required result on the connected display. Takes Arduino port as an argument.
+`print_2d_data(string)`, which render required result on the connected display. 
+Takes Arduino port and welcome string as arguments.
 
 ```python
 board = Board('COM3')

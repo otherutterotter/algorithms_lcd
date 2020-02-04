@@ -5,9 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms_lcd/arduino/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/arduino/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms_lcd/arduino/protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/arduino/protocol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms_lcd/sorting/algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/algorithms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lcd_firmata/lcd_firmata.ino" beforeDir="false" afterPath="$PROJECT_DIR$/lcd_firmata/lcd_firmata.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.protocol">
+  <component name="RunManager" selected="Python.__main__">
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms_lcd" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,6 +77,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="bubble_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithms_lcd" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithms_lcd/sorting/functions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms_lcd/sorting/functions/bubble_sort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms_lcd" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,27 +111,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms_lcd/arduino/gui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="merge_sort (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="algorithms_lcd" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithms_lcd/sorting/functions" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms_lcd/sorting/functions/merge_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,18 +160,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.__main__" />
-      <item itemvalue="Python.merge_sort (1)" />
       <item itemvalue="Python tests.Doctests in algorithms" />
       <item itemvalue="Python.gui" />
       <item itemvalue="Python.protocol" />
+      <item itemvalue="Python.bubble_sort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__main__" />
+        <item itemvalue="Python.bubble_sort" />
         <item itemvalue="Python.protocol" />
         <item itemvalue="Python.gui" />
-        <item itemvalue="Python.__main__" />
         <item itemvalue="Python tests.Doctests in algorithms" />
-        <item itemvalue="Python.merge_sort (1)" />
       </list>
     </recent_temporary>
   </component>

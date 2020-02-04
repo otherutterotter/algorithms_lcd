@@ -48,6 +48,8 @@ class Sort:
 
     def __str__(self):
         steps_str = ''
+        if len(self.steps) == 0:
+            return '\n' + self.algorithm.__name__ + '\n'
         for i in range(len(self.steps)):
             step = self.steps[i]
             steps_str_row = '\n' + str(i) + ' = ['
@@ -61,8 +63,9 @@ class Sort:
             steps_str += steps_str_row
 
         steps_value_str = '\nvalue = ['
-        for val in step:
-            if step.index(val) == len(step) - 1:
+        for i in range(len(self.sorted_list)):
+            val = self.sorted_list[i]
+            if i == len(self.sorted_list) - 1:
                 steps_value_str += str(val) + ']'
             else:
                 steps_value_str += str(val) + ','
