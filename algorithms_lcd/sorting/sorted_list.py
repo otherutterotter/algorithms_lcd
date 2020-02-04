@@ -20,6 +20,7 @@ import copy
     - Except for the methods above SortedList behaves like an ordinary list.
 """
 
+
 class SortedList(list):
     def __init__(self, l):
         list.__init__(self, l)
@@ -77,6 +78,23 @@ class SortedList(list):
         2
         """
         self.remove(item)
+        self.steps.append(copy.copy(self))
+
+    def replace(self, first_item, second_item):
+        """
+        >>> sorted_list = SortedList([])
+        >>> sorted_list.append(1)
+        >>> sorted_list.replace(1,2)
+        >>> sorted_list
+        [2]
+        >>> len(sorted_list)
+        1
+        >>> len(sorted_list.steps)
+        2
+        """
+        i = self.index(first_item)
+        self.remove(first_item)
+        self.insert(i, second_item)
         self.steps.append(copy.copy(self))
 
     def get_steps_len(self):
