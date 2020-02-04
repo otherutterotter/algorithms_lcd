@@ -8,11 +8,10 @@
 #   if text:
 #     board.send_sysex(STRING_DATA, util.str_to_two_byte_iter(text))
 
-from algorithms_lcd.sorting.algorithms import Sort
-
 if __name__ == '__main__':
+    from algorithms_lcd.sorting.algorithms import Sort
     DATA = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-    bubble_sort = Sort(Sort.insertion_sort_algorithm)
+    bubble_sort = Sort(Sort.quick_sort_algorithm)
     bubble_sort.sort(DATA)
     print(bubble_sort)
 

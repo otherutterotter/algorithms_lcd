@@ -1,4 +1,4 @@
-from algorithms_lcd.sorting.sorted_list import SortedList
+from algorithms_lcd.sorting.list import SortedList
 
 
 def algorithm(sorted_list):

@@ -2,9 +2,11 @@ import copy
 """
     ## SortedList
         Type extended from the List to record swaps needed to sort the list.
+        
     ### Parameters:
     - `list`:
         Initial data of the algorithm, which is also pushed to `self.steps` as a first member.
+        
     ### Available methods:
     - `get_steps_len()`:
         Retrieves the length of the steps (with the initial step subtracted).
@@ -16,6 +18,7 @@ import copy
         Adds value to the list and pushes its current state to the `self.steps`.
     - `pull(item)`: 
         Same as above, only item is removed instead.
+        
     ### Notes:
     - Except for the methods above SortedList behaves like an ordinary list.
 """
