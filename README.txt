@@ -7,7 +7,7 @@ Arduino based interface for displaying step-by-step execution of specified sorti
 
 ## Documentation
 ### Sort
-> algorithms_lcd.sorting.Sort
+> algorithms_lcd.sorting.algorithms.Sort
 
 Class bundles sorting-related logic and tracks changes to the data during the execution of the algorithm.
 
@@ -73,6 +73,23 @@ sorted_list.steps
 #### Notes:
 - Except for the methods above SortedList behaves like an ordinary list.
 
+---
+
+### GUI
+> algorithms_lcd.arduino.gui.GUI
+
+Tkinter GUI taking algorithms dictionary, number of items and list of type SortedList as arguments.
+Algorithms dictionary keys will be visible as options and choosing them will trigger according function
+Static method `run(algorithms, number_of_items, sorted_list)` creates and open GUI in selected setting.
+
+```python
+gui = GUI(
+  root,
+  {"merge_sort": print},
+  10,
+  [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+)
+```
 
 ## Sources
 - [The Hitchhikers Guide to Packaging](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/quickstart.html)

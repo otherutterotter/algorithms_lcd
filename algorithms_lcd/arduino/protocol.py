@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-import sys
 from pyfirmata import Arduino, util, STRING_DATA
 from serial.serialutil import SerialException
 
