@@ -1,7 +1,7 @@
 import copy
 """
     ## SortedList
-        Type extended from the List to store the history of swaps needed to sort the list.
+        Type extended from the List to record swaps needed to sort the list.
     ### Parameters:
     - `list`:
         Initial data of the algorithm, which is also pushed to `self.steps` as a first member.

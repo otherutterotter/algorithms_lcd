@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1ea7c7e-9d24-49fc-a9b5-422e854522f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/insertion_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms_lcd/arduino.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/arduino.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms_lcd/sorting/algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/algorithms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms_lcd/sorting/bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/bubble_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms_lcd/sorting/sorted_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/sorting/sorted_list.py" afterDir="false" />
     </list>
@@ -88,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bubble_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="insertion_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms_lcd" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,7 +103,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms_lcd/sorting/bubble_sort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms_lcd/sorting/insertion_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,15 +153,15 @@
       <item itemvalue="Python.arduino" />
       <item itemvalue="Python tests.Doctests in bubble_sort" />
       <item itemvalue="Python tests.Doctests in sorted_list" />
-      <item itemvalue="Python.bubble_sort" />
+      <item itemvalue="Python.insertion_sort" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.arduino" />
-        <item itemvalue="Python tests.Doctests in sorted_list" />
         <item itemvalue="Python.algorithms" />
+        <item itemvalue="Python.insertion_sort" />
+        <item itemvalue="Python tests.Doctests in sorted_list" />
         <item itemvalue="Python tests.Doctests in bubble_sort" />
-        <item itemvalue="Python.bubble_sort" />
       </list>
     </recent_temporary>
   </component>

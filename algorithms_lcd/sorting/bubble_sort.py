@@ -10,6 +10,7 @@ def algorithm(sorted_list):
 
     length = len(sorted_list)
     n_of_swaps = length
+
     while n_of_swaps > 0:
         n_of_swaps = 0
         for i in range(length):

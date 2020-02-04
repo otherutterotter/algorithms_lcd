@@ -1,6 +1,8 @@
 import copy
 from algorithms_lcd.sorting.sorted_list import SortedList
 from algorithms_lcd.sorting import bubble_sort
+from algorithms_lcd.sorting import insertion_sort
+
 """
     ## Sort
         Class bundles sorting-related logic and tracks changes to the data during the execution of the algorithm. 
@@ -73,6 +75,14 @@ class Sort:
         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         """
         return bubble_sort.algorithm(sorted_list)
+
+    @staticmethod
+    def insertion_sort_algorithm(sorted_list):
+        """
+        >>> Sort.insertion_sort_algorithm(SortedList(data))
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        """
+        return insertion_sort.algorithm(sorted_list)
 
 
 if __name__ == '__main__':
