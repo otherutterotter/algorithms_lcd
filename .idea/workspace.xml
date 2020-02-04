@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1ea7c7e-9d24-49fc-a9b5-422e854522f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithms_lcd/arduino/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms_lcd/arduino/protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms_lcd/arduino/protocol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lcd_firmata/lcd_firmata.ino" beforeDir="false" afterPath="$PROJECT_DIR$/lcd_firmata/lcd_firmata.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gui">
+  <component name="RunManager" selected="Python.protocol">
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms_lcd" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="merge_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="protocol" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms_lcd" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,11 +125,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithms_lcd/sorting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithms_lcd/arduino" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\The Elder\Documents\Projects\algorithms_lcd\algorithms_lcd\sorting\functions\merge_sort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms_lcd/arduino/protocol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,19 +157,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.merge_sort" />
       <item itemvalue="Python.__main__" />
       <item itemvalue="Python.merge_sort (1)" />
       <item itemvalue="Python tests.Doctests in algorithms" />
       <item itemvalue="Python.gui" />
+      <item itemvalue="Python.protocol" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.protocol" />
         <item itemvalue="Python.gui" />
         <item itemvalue="Python.__main__" />
         <item itemvalue="Python tests.Doctests in algorithms" />
         <item itemvalue="Python.merge_sort (1)" />
-        <item itemvalue="Python.merge_sort" />
       </list>
     </recent_temporary>
   </component>

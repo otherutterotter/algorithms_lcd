@@ -80,7 +80,7 @@ sorted_list.steps
 
 Tkinter GUI taking algorithms dictionary, number of items and list of type SortedList as arguments.
 Algorithms dictionary keys will be visible as options and choosing them will trigger according function
-Static method `run(algorithms, number_of_items, sorted_list)` creates and open GUI in selected setting.
+Static method `run(algorithms, number_of_items, sorted_list)` initializes and opens GUI with selected settings.
 
 ```python
 gui = GUI(
