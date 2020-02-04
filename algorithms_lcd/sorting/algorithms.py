@@ -78,6 +78,9 @@ class Sort:
         >>> len(bubble_sort.steps) > 0
         True
         """
+        if not isinstance(data, list) or len(data) < 2:
+            print("Error: couldn't sort list because it is not of type list or has too few items")
+            return
         self.data = data
         sorted_list = SortedList(data)
         self.algorithm(sorted_list)
